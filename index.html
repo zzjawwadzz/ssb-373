@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML TAG TABLE</title>
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    
+    <table border="1px" width="100%" cellspacing="0">
+        <tr>
+            <th>SI</th>
+            <th>TAG NAME</th>
+            <th>DESCRIPTION</th>
+            <th>EXAMPLE</th>
+        </tr>
+
+        <tr>
+            <td>01</td>
+            <td> h1 tag</td>
+            <td>This is used for heading</td>
+            <td> <h1>This is heading tag</h1> </td>
+        </tr>
+
+        <tr>
+            <td>02</td>
+            <td>p tag</td>
+            <td>This is used for paragraph</td>
+            <td> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat velit id mollitia qui ratione dignissimos libero minus labore praesentium? Reprehenderit ex dolore enim voluptatem qui dolores, consequatur saepe id? Nulla.
+
+            </p> </td>
+        </tr>
+
+        <tr>
+            <td>03</td>
+            <td> img tag</td>
+            <td>This is used for image</td>
+            <td> <img src="images/codepic.jpg" width="200px" alt="" </td>
+        </tr>
+
+        <tr>
+            <td>04</td>
+            <td>i tag</td>
+            <td>This is used for italic tag</td>
+            <td> <i>This is italic</i></td>
+        </tr>
+
+        <tr>
+            <td>05</td>
+            <td>list tag</td>
+            <td>This is used for listing</td>
+            <td>
+                <ul>
+                    <li>home</li>
+                    <li>about us</li>
+                    <li>contact us</li>
+                    <li>blog</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>06</td>
+            <td>abbr tag</td>
+            <td> This is used for Defines an abbreviation or an acronym </td>
+            <td> Lorem ipsum dolor sit amet </td>
+        </tr>
+
+        <tr>
+            <td>07</td>
+            <td>audio tag</td>
+            <td>This is used for audio</td>
+            <td>
+                <audio controls="controls">
+                    Your browser does not support the &lt;audio&gt; tag. 
+                    <source src="images/audio.mp3" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>08</td>
+            <td>video tag</td>
+            <td>This is used for video</td>
+            <td>
+                <button onclick="playVid()" type="button">Play Video</button>
+<button onclick="pauseVid()" type="button">Pause Video</button><br> 
+
+<video id="myVideo" width="320" height="176">
+  <source src="images/mov_bbb.mp4" type="video/mp4">
+  <source src="images/mov_bbb.mp4" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<script> 
+var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script> 
+
+<p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>09</td>
+            <td>article tag</td>
+            <td>This is used for article</td>
+            <td>
+                <article>
+                    <h3>Coronaviruses</h3>
+                    <p>Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV). A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans.</p>
+                  </article>
+            </td>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>area tag</td>
+            <td>This is used for area information with link</td>
+            <td>
+                <img src="images/img_nat.png" width="207" height="139" alt="Natural" usemap ="#define">
+  <map name="define" >
+    <area shape ="rect" coords ="0,0,115,90" href ="http://en.wikipedia.org/wiki/Sky" alt="croud"/>
+    <area shape ="poly" coords ="10,10,162,82,175,100,181,102,175,148,122,146" href ="http://en.wikipedia.org/wiki/Water" alt="water"/>
+  </map>
+            </td>
+        </tr>
+
+        <tr>
+            <td>11</td>
+            <td>body tag</td>
+            <td>This is used for body tag</td>
+            <td>
+                <body style="background:#ffffff; color:#000000">
+                    <p>This example represent body tag.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>12</td>
+            <td>big tag</td>
+            <td>This is use for big tag</td>
+            <td>
+                <p>This example is show a <big>big</big> text.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>13</td>
+            <td>button tag</td>
+            <td>This is used for button tag</td>
+            <td>
+                <button type="button">Click Here</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>13</td>
+            <td>canvas tag</td>
+            <td>This is used for canvas tag</td>
+            <td>
+                <canvas id="CanvasEx"> </canvas>
+
+<script type="text/javascript">
+  var canvas=document.getElementById('CanvasEx');
+  var ctx=canvas.getContext('2d');
+  ctx.fillStyle='#FFcc00';
+  ctx.fillRect(0,5,80,110);
+
+  ctx.fillStyle='#FF9900';
+  ctx.fillRect(25,0,120,50);
+
+  ctx.fillStyle='#FF00cc';
+  ctx.fillRect(100,35,120,60);
+</script>
+            </td>
+        </tr>
+
+        <tr>
+            <td>14</td>
+            <td>wbr tag</td>
+            <td>This is used for WBR tag</td>
+            <td>
+                <p>word not break: HowMuchYouLoveMe.</p>
+  <p>wbr tag example: How<wbr />Much<wbr />You<wbr />Love<wbr />Me.</p>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>15</td>
+            <td>time tag</td>
+            <td>This is used for Date and/or time </td>
+            <td>
+                <p>Our shop opens at <time>09:00</time>.</p>
+
+  <p>We should plan to go movie on <time datetime="2018-01-13">this Saturday</time>.</p>
+
+  <p>I give surprise on <time datetime="2018-02-14T20:00">Valentine's day</time>.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>16</td>
+            <td>select Tag </td>
+            <td>This is used for Drop-down menu  </td>
+            <td>
+                <h3>1.) Choose one items</h3>
+                <select name="country">
+                   <option value="bangladesh">Bangladesh</option>
+                   <option value="singapore">Singapore</option>
+                   <option value="england">England</option>
+                   <option value="france">France</option>
+                </select>
+                <br />
+              
+                <h3>2.) Choose one or more items</h3>
+                <select name="country" size="5" multiple="multiple">
+                   <option value="bangladesh">Bangladesh</option>
+                   <option value="singapore">Singapore</option>
+                   <option value="england">England</option>
+                   <option value="france">France</option>
+                </select>
+                <p>Press Ctrl button and select one or more items</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>17</td>
+            <td>mark tag</td>
+            <td>This is use for mark</td>
+            <td>
+                <p>Now a day Internet is <mark>good option</mark> for learning.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>18</td>
+            <td>iframe tag</td>
+            <td>This is used for iframe</td>
+            <td>
+                <iframe src="https://www.youtube.com/embed/hs1HoLs4SD0" 
+          width="560" height="315" frameborder="0"
+          allowfullscreen="allowfullscreen"></iframe>
+            </td>
+        </tr>
+
+        <tr>
+            <td>19</td>
+            <td>input tag</td>
+            <td>Thi is used  to create an interactive input control in HTML document</td>
+            <td>
+                <form action="form_tag_get.php" method="post">
+                    Username: <input type="text" name="username"/>
+                    <br />
+                    Password: <input type="password" name="password" />
+                    <br />
+                    <input type="submit" value="Submit" />
+                  </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>20</td>
+            <td>lable tag</td>
+            <td>This is used to to caption a text label with a form </td>
+            <td>
+                <form>
+                    <label for="firstname">First Name </label> 
+                    <input type="text" name="firstname" id="firstname" />
+                  </form>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>21</td>
+            <td>colgroup tag</td>
+            <td>This is used todefines a group of one or more columns in table element  </td>
+            <td>
+                <table width="200" border="1">
+                    <colgroup span="2"> 
+                       <col width="80" />
+                       <col width="120" />
+                     </colgroup>
+                     <tr>
+                       <th>Day</th>
+                       <th>Type</th>
+                     </tr>
+                     <tr>
+                       <td>Monday</td>
+                       <td>nice day</td>
+                     </tr>
+                     <tr>
+                       <td>Thusday</td>
+                       <td>good day</td>
+                     </tr>
+                   </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>21</td>
+            <td>base tag</td>
+            <td>This is used to connect link with base</td>
+            <td>
+                <base href="https://www.shikhbeshobai.com/html/" target="_blank"/>
+  <p>Let's Click here <a href="index.php">Shikbe Shobai</a></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>22</td>
+            <td>fieldest tag</td>
+            <td>Defines a grouping of related form</td>
+            <td>
+                <fieldset>
+                    <legend>Gender</legend>
+                
+                    <input type="radio" name="gender" id="male" value="male" checked="checked"/>
+                    <label for="male">Male</label>
+                
+                    <input type="radio" name="gender" id="female" value="female"/>
+                    <label for="female">Female</label>
+                
+                  </fieldset>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>23</td>
+            <td>em tag</td>
+            <td>This is used to Define a text is emphasize format</td>
+            <td>
+                <p>This text are <em>Emphasize format.</em></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>24</td>
+            <td>address tag</td>
+            <td>This is used for address</td>
+            <td>
+                <address>
+                    XYZ Shipyard Pte. Ltd.<br />
+                    North University Road<br />
+                    Near West Cloth bazar<br />
+                    Bronx, 10474<br />
+                    New York, United States
+                  </address>
+            </td>
+        </tr>
+
+        <tr>
+            <td>25</td>
+            <td>cite tag</td>
+            <td>This is used for Specifies a text citation  </td>
+            <td>
+                <p>
+                    <cite title="Cascading Style Sheet"> CSS </cite> is more flexible and very useful for web design.
+                  </p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>26</td>
+            <td>command tag</td>
+            <td> This is used for Define a command button, invoke as per user action </td>
+            <td>
+                <menu>
+                    <command type="checklist" label="Check List">Check List</command>
+                  </menu>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>27</td>
+            <td>menu tag</td>
+            <td>This is Used to display a unordered list of items/menu of commands. </td>
+            <td>
+                <h3>1.) type="context"</h3>
+<div contextmenu="popup-menu">Right-click to see the context menu</div>
+<menu type="context" id="popup-menu">
+  <menuitem>Action 1</menuitem>
+  <menu label="Action 2">
+    <menuitem>Sub Menu</menuitem>
+  </menu>
+  <menuitem>Action 3</menuitem>
+</menu>
+
+<h3>2.) type="list"</h3>
+<menu>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</menu>
+
+<h3>3.) type="toolbar"</h3>
+<menu type="toolbar" label="copy">
+  <button type="button" onclick="copyfuncion()">Copy</button>
+</menu>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>28</td>
+            <td>ruby tag</td>
+            <td>This is used to represent ruby annotation</td>
+            <td>
+                <p> 
+                    <ruby>草泥馬 <rt>Cǎo Ní Mǎ</rt> </ruby>
+                  </p>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>29</td>
+            <td>table tag</td>
+            <td>This is used to defines a table</td>
+            <td>
+                <table>
+                    <tr>
+                      <th>NO</th>
+                      <th>NAME</th>
+                      <th>ADDRESS</th>
+                      <th>CONTACT NO</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Opal Kole</td>
+                      <td>63 street Ct.</td>
+                      <td>000-444-8291</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Jack Evans</td>
+                      <td>1274 West Street</td>
+                      <td>000-444-5672</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Sariya Vargas</td>
+                      <td>10 Texo Court.</td>
+                      <td>000-444-6371</td>
+                    </tr>
+                  </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>30</td>
+            <td>var tag</td>
+            <td>This is used for Represents a variable in a computer program or mathematical equation</td>
+            <td>
+                <p>This example represent <tt>var</tt> text.</p>
+  <p><var>x</var> = 12</p>
+            </td>
+        </tr>
+
+
+        
+</table>
+</body>
+</html>
